@@ -12,7 +12,7 @@ import LatencyMonitor from './LatencyMonitor';
  */
 const monitor = new LatencyMonitor();
 console.log('Event Loop Latency Monitor Loaded: %O', {
-    latencyCheckIntervalMs: monitor.latencyCheckIntervalMs,
-    dataEmitIntervalMs: monitor.dataEmitIntervalMs
+  latencyCheckIntervalMs: monitor.latencyCheckIntervalMs,
+  dataEmitIntervalMs: monitor.dataEmitIntervalMs
 });
 monitor.on('data', (summary) => console.log('Event Loop Latency: %O', summary));
